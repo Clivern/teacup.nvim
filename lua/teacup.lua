@@ -3,7 +3,7 @@ local mod = require("teacup.module")
 
 ---@class Config
 local config = {
-  opt = "Hello!",
+  msg = "Hello World!",
 }
 
 local M = {}
@@ -11,14 +11,22 @@ local M = {}
 ---@type Config
 M.config = config
 
+-- Hello method
+M.hello = function()
+  return mod.great(M.config.msg)
+end
+
+-- Execute plugin
+M.execute = function()
+  vim.api.nvim_create_user_command("Teacup", function()
+    vim.notify(M.hello())
+  end, {})
+end
+
 -- Setup method
 M.setup = function(args)
   M.config = vim.tbl_deep_extend("force", M.config, args or {})
-end
-
--- Hello method
-M.hello = function()
-  return mod.great(M.config.opt)
+  M.execute()
 end
 
 return M
