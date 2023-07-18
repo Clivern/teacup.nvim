@@ -1,23 +1,15 @@
-# Teacup Neovim Plugin
+## Teacup Neovim Plugin
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Clivern/teacup.neovim/lint-test.yml?branch=main&style=for-the-badge)
-![Lua](https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua)
+A Neovim Plugin Template.
+
+### Installation
 
 
-### Plugin structure
+### Contributing
 
-```
-.
-├── lua
-│   ├── teacup
-│   │   └── module.lua
-│   └── teacup.lua
-├── Makefile
-├── plugin
-│   └── teacup.lua
-├── README.md
-├── tests
-│   ├── minimal_init.lua
-│   └── teacup
-│       └── teacup_spec.lua
-```
+Contributions are welcome! If you have ideas for new features or improvements, feel free to open an issue or submit a pull request.
+
+### License
+
+This plugin is licensed under the MIT License.
+

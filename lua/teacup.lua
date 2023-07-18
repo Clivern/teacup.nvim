@@ -1,5 +1,5 @@
 -- main module file
-local module = require("teacup.module")
+local mod = require("teacup.module")
 
 ---@class Config
 ---@field opt string Your config option
