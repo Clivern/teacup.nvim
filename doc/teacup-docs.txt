@@ -12,6 +12,28 @@ A Neovim Plugin Template.
 
 INSTALLATION ~
 
+1. Install it via your favorite package manager.
+
+>lua
+    -- lazy.nvim
+    {
+        "clivern/teacup.nvim",
+    },
+<
+
+1. Setup the plugin in your `init.lua` and provide the `opts` as below
+
+>lua
+    require("teacup").setup({
+        msg = "Hey there!",
+    })
+<
+
+
+USAGE ~
+
+The plugin provide a command `:Teacup` to print the message
+
 
 CONTRIBUTING ~
 
